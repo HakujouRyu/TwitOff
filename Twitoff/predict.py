@@ -1,4 +1,3 @@
-Learn more or give us feedback
 """Prediction of Users based on Tweet embeddings."""
 import pickle
 import numpy as np

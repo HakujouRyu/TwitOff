@@ -1,4 +1,3 @@
-
 """These are my database models"""
 
 from flask_sqlalchemy import SQLAlchemy
