@@ -38,7 +38,8 @@ def create_app():
         except Exception as e:
             message = "Error adding {}: {}".format(name,e)
             tweets = []
-        return render_template('user.html', title=name, tweets=tweets,
+        users = User.query.all()
+        return render_template('user.html', title=name, users=users, tweets=tweets,
         message=message)
 
  #adding in a route for predictions
@@ -53,7 +54,8 @@ def create_app():
             message = '"{}" is more likely to be said by {} than {}'.format(
                 request.values['tweet_text'], user1 if prediction else user2,
                 user2 if prediction else user1)
-        return render_template('prediction.html', title='Prediction', message=message)
+        users = User.query.all()
+        return render_template('prediction.html', title='Prediction',users=users, message=message)
 
     @app.route('/reset')
     def reset():
