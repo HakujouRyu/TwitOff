@@ -3,4 +3,4 @@ A fun web App for comparing and predicting Tweets using Natural Language Process
 
 # [Found Here](https://hakujouryu-twitoff.herokuapp.com/)
 
-#[Blog Post](http://www.claywaddell.com/2019-11-14-TwittOff/)
+# [Blog Post](http://www.claywaddell.com/2019-11-14-TwittOff/)
